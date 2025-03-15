@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <header className='animate-fade-in-scale bg-background h-12 p-2 border-b stricky top-0 z-20'>
+        <header className='animate-slide-in-right bg-background h-12 p-2 border-b stricky top-0 z-20'>
             <div className='flex h-8 items-center justify-between w-full'>
                 <div className="flex items-center gap-2">
                     <NavButton icon={HomeIcon} label="Home" href="/" />

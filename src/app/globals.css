@@ -41,6 +41,7 @@
 
   /* Aquí es donde defines la animación */
   --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  --animate-slide-in-right: slide-in-right 0.5s ease-out;
 
   /* La regla keyframes que define la animación */
   @keyframes fade-in-scale {
@@ -51,6 +52,16 @@
     100% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
