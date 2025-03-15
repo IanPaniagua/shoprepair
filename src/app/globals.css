@@ -42,6 +42,7 @@
   /* Aquí es donde defines la animación */
   --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
   --animate-slide-in-right: slide-in-right 0.5s ease-out;
+  --animate-appear: appear 0.5s ease-in-out;
 
   /* La regla keyframes que define la animación */
   @keyframes fade-in-scale {
@@ -64,6 +65,15 @@
       transform: translateX(0);
     }
   }
+    /* Keyframe para la nueva animación appear */
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
