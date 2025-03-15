@@ -38,12 +38,29 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
+  /* Aquí es donde defines la animación */
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+
+  /* La regla keyframes que define la animación */
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Aquí continúas con tus otras definiciones */
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
