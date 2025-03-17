@@ -9,7 +9,7 @@ export default function LoginPage() {
 
             <h1>Repair Shop</h1>
             <Button asChild>
-                <LoginLink href="/home">Sign</LoginLink>
+                <LoginLink>Sign</LoginLink>
             </Button>
 
         </main>
